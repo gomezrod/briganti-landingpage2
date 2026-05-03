@@ -200,7 +200,11 @@
 }
 
 .about-image-1 {
-  background-image: url("../img/webp/about.webp");
+  background-image: url("../img/webp/about_2.webp");
+
+  @media only screen and (min-width: 768px)  {
+    background-image: url("../img/webp/about.webp");
+  }
 }
 
 .marquee-image-single-1 {
