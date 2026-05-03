@@ -34,48 +34,15 @@
 
     <!-- Template Styles Start -->
     <link rel="stylesheet" type="text/css" href="css/loaders/loaders.css">
-    <link rel="stylesheet" type="text/css" href="css/plugins.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/plugins.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <!-- <style>
-    /* PhotoSwipe fallback icons: only apply when SVG sprite is NOT used */
-    .pswp__button{display:flex;align-items:center;justify-content:center;color:#111;font-size:1.2rem;width:44px;height:44px;border-radius:6px}
-
-    .pswp:not(.pswp--svg) .pswp__button--close::before{content:"✕";font-size:1.2rem}
-    .pswp:not(.pswp--svg) .pswp__button--zoom::before{content:"🔍"}
-    .pswp:not(.pswp--svg) .pswp__button--share::before{content:"⤴"}
-    .pswp:not(.pswp--svg) .pswp__button--fs::before{content:"⤢"}
-
-    .pswp:not(.pswp--svg) .pswp__button--arrow--left:before,
-    .pswp:not(.pswp--svg) .pswp__button--arrow--right:before{
-      position:static;top:auto;left:auto;right:auto;width:auto;height:auto;background:none;line-height:1;font-size:1.6rem;color:#111
-    }
-    .pswp:not(.pswp--svg) .pswp__button--arrow--left:before{content:"◀"}
-    .pswp:not(.pswp--svg) .pswp__button--arrow--right:before{content:"▶"}
-    /* Ensure SVG sprite is used for the actual icon elements only.
-       Avoid applying the sprite to the arrow hit-area buttons themselves. */
-    .pswp--svg .pswp__button--close,
-    .pswp--svg .pswp__button--share,
-    .pswp--svg .pswp__button--zoom,
-    .pswp--svg .pswp__button--fs {
-      background-image: url('img/default-skin.svg') !important;
-      background-size: 264px 88px !important;
-      background-repeat: no-repeat !important;
-    }
-
-    .pswp--svg .pswp__button--arrow--left:before,
-    .pswp--svg .pswp__button--arrow--right:before {
-      background-image: url('img/default-skin.svg') !important;
-      background-size: 264px 88px !important;
-      background-repeat: no-repeat !important;
-    }
-    </style> -->
-    <!-- Template Styles End -->
 
     <!-- Custom Browser Color Start -->
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#BABEC8">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#141414">
     <meta name="msapplication-navbutton-color" content="#141414">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <!-- Custom Browser Color End -->
@@ -180,7 +147,7 @@
           <!-- Intro Background Start -->
           <div class="intro__background intro-bg-01">
             <div class="intro-bg__shadow" data-speed="0.6">
-              <video style="width: 100%; height: 100%; object-fit: cover;" src="./img/video/video_landingpage3.mp4" autoplay muted loop></video>
+              <video style="width: 100%; height: 100%; object-fit: cover;" src="./img/video/video_landingpage3.webm" autoplay muted loop></video>
               <!-- <img src="./img/20250816_143135.jpg" alt="Background Objects"> -->
               <!-- <div class="intro-bg__shadow"></div> -->
             </div>
@@ -247,7 +214,7 @@
                         <!-- change the background image in the main.css file - .main-image-1 -->
                         <div class="divider divider-image main-image-1 animate-in-up">
                     
-                          <img src="./img/2500x2500.jpg" alt="main" style="object-fit: cover;">
+                          <!-- <img src="./img/2500x2500.jpg" alt="main" style="object-fit: cover;"> -->
                         </div>
                       </div>
                     </div>
@@ -407,7 +374,7 @@
                         <div class="row g-3">
                           <!-- Image Column -->
                           <div class="col-12 col-md-6">
-                            <img src="./img/flyers/MAYO.png" alt="flyer_clandestino" style="width: 100%; height: auto; display: block; border-radius: 8px;">
+                            <img src="./img/flyers/MAYO.webp" alt="flyer_clandestino" style="width: 100%; height: auto; display: block; border-radius: 8px;">
                           </div>
                           <!-- Map Column -->
                           <div class="col-12 col-md-6">
@@ -487,8 +454,8 @@
                               <p class="services-stack__text type-basic-160lh">Voz</p>
                             </div>
                             <div class="services-stack__image">
-                              <img class="service-img service-img-s" src="./img/_DSC0001.jpg" alt="Juan Ignacio D'Elia">
-                              <img class="service-img service-img-m" src="./img/_DSC0001.jpg" alt="Juan Ignacio D'Elia">
+                              <img class="service-img service-img-s" src="./img/webp/members1.webp" alt="Juan Ignacio D'Elia">
+                              <img class="service-img service-img-m" src="./img/webp/members1.webp" alt="Juan Ignacio D'Elia">
                             </div>
                           </div>
                         </div>
@@ -503,8 +470,8 @@
                               <p class="services-stack__text type-basic-160lh">Guitarra</p>
                             </div>
                             <div class="services-stack__image">
-                              <img class="service-img service-img-s" src="./img/_DSC0023.jpg" alt="Rodrigo Gómez">
-                              <img class="service-img service-img-m" src="./img/_DSC0023.jpg" alt="Rodrigo Gómez">
+                              <img class="service-img service-img-s" src="./img/webp/members2.webp" alt="Rodrigo Gómez">
+                              <img class="service-img service-img-m" src="./img/webp/members2.webp" alt="Rodrigo Gómez">
                             </div>
                           </div>
                         </div>
@@ -520,8 +487,8 @@
                               <p class="services-stack__text type-basic-160lh">Bajo</p>
                             </div>
                             <div class="services-stack__image">
-                              <img class="service-img service-img-s" src="./img/_DSC0013.jpg" alt="Julián Yuffrida">
-                              <img class="service-img service-img-m" src="./img/_DSC0013.jpg" alt="Julián Yuffrida">
+                              <img class="service-img service-img-s" src="./img/webp/members3.webp" alt="Julián Yuffrida">
+                              <img class="service-img service-img-m" src="./img/webp/members3.webp" alt="Julián Yuffrida">
                             </div>
                           </div>
                         </div>
@@ -532,12 +499,13 @@
                               <h3>Lucas González Carman</h3>
                             </div>
                             <div class="services-stack__descr">
+                              <!-- <p>Con pasado como deportista de alto rendimiento, Piter se aventura en el mundo de la música como batería.</p> -->
                               <i class="ph ph-thin ph-cube"></i>
-                              <p class="services-stack__text type-basic-160lh">Batería.</p>
+                              <p class="services-stack__text type-basic-160lh">Batería</p>
                             </div>
                             <div class="services-stack__image">
-                              <img class="service-img service-img-s" src="./img/DSC_5279.jpg" alt="Lucas González Carman">
-                              <img class="service-img service-img-m" src="./img/DSC_5279.jpg" alt="Lucas González Carman">
+                              <img class="service-img service-img-s" src="./img/webp/members4.webp" alt="Lucas González Carman">
+                              <img class="service-img service-img-m" src="./img/webp/members4.webp" alt="Lucas González Carman">
                             </div>
                           </div>
                         </div>
@@ -691,22 +659,22 @@
                     <div class="container-fluid p-0">
                       <div class="live-gallery-grid">
                         <a href="./img/live/live_vertical_1.jpeg" data-size="800x1200" class="gallery-item live-gallery-item live-gallery-item--v1 animate-in-up">
-                          <img src="./img/live/live_vertical_1.jpeg" alt="BRIGANTI en vivo">
+                        <img src="./img/live/live_vertical_1.avif" alt="BRIGANTI en vivo">
                         </a>
                         <a href="./img/live/live_horizontal_1.jpg" data-size="1200x800" class="gallery-item live-gallery-item live-gallery-item--h1 animate-in-up">
-                          <img src="./img/live/live_horizontal_1.jpg" alt="BRIGANTI en vivo">
+                          <img src="./img/live/live_horizontal_1.avif" alt="BRIGANTI en vivo">
                         </a>
                         <a href="./img/live/live_horizontal_2.jpg" data-size="1200x800" class="gallery-item live-gallery-item live-gallery-item--h2 animate-in-up">
-                          <img src="./img/live/live_horizontal_2.jpg" alt="BRIGANTI en vivo">
+                          <img src="./img/live/live_horizontal_2.avif" alt="BRIGANTI en vivo">
                         </a>
                         <a href="./img/live/live_horizontal_3.jpg" data-size="1200x800" class="gallery-item live-gallery-item live-gallery-item--h3 animate-in-up">
-                          <img src="./img/live/live_horizontal_3.jpg" alt="BRIGANTI en vivo">
+                          <img src="./img/live/live_horizontal_3.avif" alt="BRIGANTI en vivo">
                         </a>
                         <a href="./img/live/live_horizontal_4.jpeg" data-size="1200x800" class="gallery-item live-gallery-item live-gallery-item--h4 animate-in-up">
-                          <img src="./img/live/live_horizontal_4.jpeg" alt="BRIGANTI en vivo">
+                          <img src="./img/live/live_horizontal_4.avif" alt="BRIGANTI en vivo">
                         </a>
                         <a href="./img/live/live_vertical_2.jpg" data-size="800x1200" class="gallery-item live-gallery-item live-gallery-item--v2 animate-in-up">
-                          <img src="./img/live/live_vertical_2.jpg" alt="BRIGANTI en vivo">
+                          <img src="./img/live/live_vertical_2.avif" alt="BRIGANTI en vivo">
                         </a>
                       </div>
                     </div>

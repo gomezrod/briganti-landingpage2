@@ -192,15 +192,15 @@
 /* Template Backgrounds Start */
 /* ------------------------------------------------*/
 .main-image-1 {
-  background-image: url("../img/2500x2500.jpg");
+  background-image: url("../img/webp/2500x2500.webp");
 }
 
 .main-image-2 {
-  background-image: url("../img/logo_briganti.png");
+  background-image: url("../img/webp/logo_briganti.webp");
 }
 
 .about-image-1 {
-  background-image: url("../img/about.jpg");
+  background-image: url("../img/webp/about.webp");
 }
 
 .marquee-image-single-1 {
@@ -3864,11 +3864,12 @@ form textarea:required:valid {
   -moz-background-size: cover;
        background-size: cover;
   height: 440px;
+  background-position-y: 0;
 }
 @media only screen and (min-width: 768px) {
   .divider-image,
   .divider-video {
-    height: 500px;
+    height: 440px;
   }
 }
 @media only screen and (min-width: 1400px) {
