@@ -38,8 +38,13 @@
 /* ------------------------------------------------*/
 /* Fonts Start */
 /* ------------------------------------------------*/
+
+/* Roboto Flex font*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap");
 /* Urbanist font */
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+/* Gelasio font */
+@import url("https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap");
 /* ------------------------------------------------*/
 /* Fonts End */
 /* ------------------------------------------------*/
@@ -48,8 +53,8 @@
 /* ------------------------------------------------*/
 :root {
   --_size: 1.6rem;
-  --_font-default: "Urbanist", sans-serif;
-  --_font-accent: "Urbanist", sans-serif;
+  --_font-default: "Roboto Flex", sans-serif;
+  --_font-accent: "Gelasio", sans-serif;
   --_radius: 2rem;
   --_radius-s: 1rem;
   --_animspeed-fast: 0.1s;
@@ -73,7 +78,7 @@
   --t-opp-muted--light: #3E4045;
   --neutral-bright--light: #000000;
   /* dark color scheme */
-  --base--dark: #141414;
+  --base--dark: #2b0000;
   --base-rgb--dark: 20,20,20;
   --base-shade--dark: #000000;
   --base-tint--dark: #242424;
@@ -4374,6 +4379,7 @@ form textarea:required:valid {
       -ms-flex-align: center;
           align-items: center;
 }
+
 .footer-logo svg {
   width: 4rem;
   height: auto;
@@ -4391,6 +4397,129 @@ form textarea:required:valid {
   }
   .footer-logo span {
     padding-left: 1.6rem;
+  }
+}
+
+.footer-bar {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 2rem;
+  padding: 2.4rem 5rem;
+}
+
+.footer-title {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.footer-title h3 {
+  margin: 0;
+  font: normal 400 2rem var(--_font-default);
+  color: var(--t-bright);
+}
+
+.footer-title img {
+  width: 2.2rem;
+  height: 2.2rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.footer-social-links {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.4rem;
+}
+.footer-link{
+  border-radius: 100%;
+}
+
+.footer-link:hover {
+    background-color: var(--neutral-bright--dark);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.5);
+    img{
+      filter: invert(0);
+    }
+}
+
+.footer-link a {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 3.8rem;
+  height: 3.8rem;
+  border: 2px solid var(--stroke-elements);
+  -moz-border-radius: 999px;
+       border-radius: 999px;
+
+}
+
+.footer-link img {
+  width: 1.8rem;
+  height: 1.8rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  filter: invert(1);
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-bar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 3rem;
+  }
+
+  .footer-title h3 {
+    font-size: 2.2rem;
   }
 }
 
